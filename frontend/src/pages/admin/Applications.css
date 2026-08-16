@@ -1,0 +1,172 @@
+.admin-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.badge-info {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.badge-success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.badge-secondary {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* Modal Specifics for Applications */
+.large-modal {
+  max-width: 900px !important;
+  width: 95%;
+}
+
+.application-details {
+  padding: 0;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.app-section {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.app-section.full-width {
+  grid-column: 1 / -1;
+  margin: 0 20px 20px 20px;
+}
+
+.app-section h4 {
+  color: var(--gmit-navy);
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.app-section p {
+  margin: 8px 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.app-section strong {
+  color: #1e293b;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #cbd5e1;
+}
+
+.status-actions {
+  margin-top: 20px;
+}
+
+.status-actions p {
+  font-weight: bold;
+  color: var(--gmit-navy);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.status-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.status-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(0.95);
+}
+
+.status-btn.pending { background: #f59e0b; color: white; }
+.status-btn.verified { background: #3b82f6; color: white; }
+.status-btn.approved { background: #10b981; color: white; }
+.status-btn.rejected { background: #ef4444; color: white; }
+
+.status-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.documents-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.doc-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: var(--gmit-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.doc-link:hover {
+  background: var(--gmit-blue);
+  color: white;
+  border-color: var(--gmit-blue);
+}
+
+.academic-table h5 {
+  margin: 15px 0 5px 0;
+  color: var(--gmit-navy);
+}
+
+.academic-table h5:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+const express = require("express");
+const router = express.Router();
+const { protect } = require("../middleware/auth");
+const { registerUser, verifyOtp, resendOtp, loginUser, googleLogin, getProfile, forgotPassword, resetPassword, changePassword } = require("../controllers/authController");
+router.post("/register", registerUser);
+router.post("/verify-otp", verifyOtp);
+router.post("/resend-otp", resendOtp);
+router.post("/login", loginUser);
+router.post("/google-login", googleLogin);
+router.post("/forgot-password", forgotPassword);
+router.post("/reset-password", resetPassword);
+router.put("/change-password", protect, changePassword);
+router.get("/profile", protect, getProfile);
+module.exports = router;

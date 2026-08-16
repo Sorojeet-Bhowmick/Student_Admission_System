@@ -1,0 +1,130 @@
+.courses-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.courses-header h1 {
+  font-size: 2.5rem;
+  color: var(--gmit-blue);
+  margin-bottom: 15px;
+}
+
+.courses-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.course-card-header {
+  background: linear-gradient(135deg, var(--gmit-blue) 0%, #1e3a8a 100%);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-card-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.course-duration {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.course-card-body {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.course-actions {
+  margin-top: auto;
+}
+
+.course-description {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  min-height: 65px;
+}
+
+.course-details-list {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.course-detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.course-detail-item:last-child {
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px dashed #cbd5e1;
+}
+
+.course-detail-item strong {
+  color: #334155;
+}
+
+.course-fees {
+  color: var(--gmit-orange);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.courses-loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

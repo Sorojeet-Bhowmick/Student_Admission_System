@@ -1,0 +1,230 @@
+.dashboard-page-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.dashboard-loading {
+  text-align: center;
+  padding: 100px;
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.header-text h2 {
+  color: var(--gmit-navy);
+  margin-bottom: 5px;
+}
+
+.header-text p {
+  color: #64748b;
+  margin: 0;
+}
+
+.btn-outline {
+  padding: 8px 16px;
+  border: 1px solid var(--gmit-blue);
+  background: transparent;
+  color: var(--gmit-blue);
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: var(--gmit-blue);
+  color: white;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  padding: 25px;
+  border: 1px solid #f1f5f9;
+}
+
+.dashboard-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--gmit-navy);
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-item span {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.detail-item strong {
+  color: #1e293b;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: white;
+}
+.status-badge.pending { background: #f59e0b; }
+.status-badge.verified { background: #3b82f6; }
+.status-badge.approved { background: #10b981; }
+.status-badge.rejected { background: #ef4444; }
+
+.admin-welcome {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-app {
+  text-align: center;
+  padding: 50px;
+  color: #64748b;
+}
+
+/* Modal styles for Password Change */
+.dashboard-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dashboard-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-modal-content h3 {
+  margin-top: 0;
+  color: var(--gmit-navy);
+}
+
+.text-muted {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.password-form .form-group {
+  margin-bottom: 15px;
+}
+
+.password-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.password-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.password-form input:focus {
+  outline: none;
+  border-color: var(--gmit-blue);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btn-cancel {
+  padding: 8px 16px;
+  background: #f1f5f9;
+  color: #475569;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-submit {
+  padding: 8px 16px;
+  background: var(--gmit-orange);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.contact-edit-form .form-group {
+  margin-bottom: 12px;
+}
+
+.contact-edit-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.contact-edit-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}

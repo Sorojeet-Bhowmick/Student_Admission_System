@@ -1,0 +1,132 @@
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.payment-modal-content {
+  background: #ffffff;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.payment-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px;
+  transition: color 0.2s ease;
+}
+
+.payment-modal-close:hover {
+  color: #ef4444;
+}
+
+.payment-modal-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.payment-modal-header h2 {
+  color: var(--gmit-blue, #003366);
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.payment-modal-header p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.payment-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.payment-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.payment-input:focus {
+  outline: none;
+  border-color: var(--gmit-blue, #003366);
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+
+.payment-methods {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.payment-icons {
+  margin-top: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.payment-submit-btn {
+  background: var(--gmit-orange, #f97316);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.payment-submit-btn:hover {
+  background: #ea580c;
+}

@@ -1,0 +1,80 @@
+.about-page-container {
+  padding-bottom: 60px;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--gmit-navy) 0%, #1e3a8a 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--gmit-orange);
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-section {
+  margin-bottom: 45px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--gmit-orange);
+}
+
+.about-section h2 {
+  color: var(--gmit-blue);
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.about-section p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  color: #334155;
+}
+
+.about-section > ul > li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.about-section > ul > li > strong {
+  color: var(--gmit-navy);
+}
+
+.about-section ul ul {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  list-style-type: circle;
+}
+
+.about-section ul ul li {
+  margin-bottom: 6px;
+  color: #475569;
+}
